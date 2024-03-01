@@ -12,17 +12,17 @@ function Cover() {
   return (
     
    <>
-      <div className='coverDiv grid grid-rows-1 p-0 m-0'>
+      <div className='coverDiv grid grid-rows-3 md:grid-rows-2 p-0 m-0'>
         <div><div style={{ fontFamily: "Roboto" }} className="text-5xl text-emerald-700 font-bold tracking-tighter">
         Shuchi
       </div>
 
-      <div style={{ "font-family": "Open Sans "}} className='font-bold text-slate-800 '>
+      <div style={{ fontFamily: "Open Sans "}} className='font-bold text-slate-800 '>
         Transforming Waste into wealth
       </div>
       </div>
      
-   <Button variant="text" style={{ fontFamily: 'Open Sans', color: '#FA4A0C', }} className=' text-xl mb-12 font-bold border-2'>Get Started</Button>
+   <Button variant="text" style={{ fontFamily: 'Open Sans', color: '#FA4A0C', }} className=' text-xl mb-10 font-bold border-2'>Get Started</Button>
       
       </div>
       

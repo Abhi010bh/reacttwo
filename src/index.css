@@ -12,9 +12,10 @@ body{
 .coverDiv{
   background-image: url('../public/PlantsBG.webp');
   background-repeat: repeat-x;
+  background-size: 100dvh;
   overflow: hidden;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   justify-content: center;
   align-items: center;

@@ -22,7 +22,7 @@ function Cover() {
       </div>
       </div>
      
-   <Button variant="text" style={{ fontFamily: 'Open Sans', color: '#FA4A0C', }} className=' text-xl mb-10 font-bold border-2'>Get Started</Button>
+   <Button variant="text" style={{ fontFamily: 'Open Sans', color: '#FA4A0C', }} className=' text-xl b-10 font-bold border-2'>Get Started</Button>
       
       </div>
       

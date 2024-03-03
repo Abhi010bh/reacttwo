@@ -12,14 +12,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.2.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@fontsource/open-sans": "^5.0.24",
     "@fontsource/roboto": "^5.0.8",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.15.11",
     "@mui/material": "^5.15.11",
+    "lottie-react": "^2.4.0",
     "particles-bg": "^2.5.5",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-avatar": "^5.0.3",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

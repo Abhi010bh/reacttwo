@@ -9,21 +9,23 @@ import "@fontsource/roboto/400-italic.css"; // Specify weight and style
 import "@fontsource/open-sans"; // Defaults to weight 400
 import "@fontsource/open-sans/400.css"; // Specify weight
 import "@fontsource/open-sans/400-italic.css"; // Specify weight and style
-
-
 import Cover from "./components/Cover";
 import { StyledEngineProvider } from "@mui/material";
-import LoginForm from "./components/LoginForm";
 
+import LoginForm from "./components/LoginForm";
+import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <StyledEngineProvider injectFirst>
-        {/*<Cover />*/}
-        <LoginForm />
-      </StyledEngineProvider>
-    </>
+    <StyledEngineProvider injectFirst>
+      <BrowserRouter>
+        
+        <Routes>
+          <Route path="/reacttwo/" element={<Cover />} />
+          <Route path="/reacttwo/Login" element={<LoginForm />} />
+        </Routes>
+      </BrowserRouter>
+    </StyledEngineProvider>
   );
 }
 

@@ -9,14 +9,20 @@ import "@fontsource/open-sans/400.css"; // Specify weight
 import "@fontsource/open-sans/400-italic.css"; // Specify weight and style
 import Button from "@mui/material/Button";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
+import { useNavigate } from "react-router-dom";
+import { QuickAccess } from "./QuickAccess";
+
 function Cover() {
+  const navigate=useNavigate();
+  
   return (
     <>
       <div className="coverDiv grid grid-rows-2 md:grid-rows-2 p-0 m-0">
+        <QuickAccess />
         <div>
           <div
             style={{ fontFamily: "Roboto" }}
-            className="text-5xl text-emerald-700 font-bold tracking-tighter"
+            className="text-5xl text-green-700 font-bold tracking-tighter"
           >
             Shuchi
           </div>
@@ -29,15 +35,17 @@ function Cover() {
           </div>
         </div>
 
-        <Button
+       <Button
           endIcon={<ArrowCircleRightIcon />}
           variant="text"
           style={{ fontFamily: "Open Sans", color: "#FA4A0C" }}
           className=" text-xl mb-10 font-bold border-2"
+          onClick={()=>{navigate("/reacttwo/Login")}}
         >
           Get Started
-        </Button>
+  </Button>
       </div>
+
     </>
   );
 }

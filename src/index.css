@@ -33,4 +33,11 @@ body {
   @media (max-width: 1250px) {
     background-size: 50vh;
   }
+  outline: 0;
+}
+
+.form{
+  @media (max-width: 720px) {
+    width: 100dvh;
+  }
 }

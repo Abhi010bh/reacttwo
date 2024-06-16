@@ -38,8 +38,8 @@ export const QuickAccess=()=>{
         },
         {
           icon: <ShareIcon />,
-          name: "Share",
-          click: () => {},
+          name: "SignUp",
+          click: () => {navigator("/reacttwo/SignUp")},
         },
       ];
     

@@ -11,19 +11,29 @@ import "@fontsource/open-sans/400.css"; // Specify weight
 import "@fontsource/open-sans/400-italic.css"; // Specify weight and style
 import Cover from "./components/Cover";
 import { StyledEngineProvider } from "@mui/material";
-
+import Animate from "./components/Animation";
 import LoginForm from "./components/LoginForm";
 import { Route, Routes, BrowserRouter, Link } from "react-router-dom";
+import { QuickAccess } from "./components/QuickAccess";
+import SignUpForm from "./components/SignUpForm";
+import SimpleBottomNavigation from "./components/SimpleBottomNavigation";
 
 function App() {
   return (
     <StyledEngineProvider injectFirst>
       <BrowserRouter>
+      
+        <QuickAccess />
+        
         
         <Routes>
           <Route path="/reacttwo/" element={<Cover />} />
           <Route path="/reacttwo/Login" element={<LoginForm />} />
+          <Route path="/reacttwo/Animate" element={<Animate />} />
+          <Route path="/reacttwo/SignUpForm" element={<SignUpForm />} />
+          
         </Routes>
+        
       </BrowserRouter>
     </StyledEngineProvider>
   );

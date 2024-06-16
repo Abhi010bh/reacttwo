@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { FormComponent } from "./FormComponent";
 import { useNavigate } from "react-router-dom";
 import { QuickAccess } from "./QuickAccess";
+import SignUp from "./SignUp";
 
-function LoginForm() {
+function SignUpForm() {
 
   
 
@@ -24,7 +25,7 @@ function LoginForm() {
           </div>
         </div>
         <div className="relative  row-span-2 md:col-span-2 pt-12 mt-12 md:mt-24">
-       <FormComponent />
+        <SignUp />
        </div>
               
 
@@ -34,4 +35,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default SignUpForm;

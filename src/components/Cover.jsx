@@ -11,14 +11,15 @@ import Button from "@mui/material/Button";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { useNavigate } from "react-router-dom";
 import { QuickAccess } from "./QuickAccess";
-
+import SimpleBottomNavigation from "./SimpleBottomNavigation";
 function Cover() {
   const navigate=useNavigate();
   
   return (
     <>
+    
       <div className="coverDiv grid grid-rows-2 md:grid-rows-2 p-0 m-0">
-        <QuickAccess />
+      
         <div>
           <div
             style={{ fontFamily: "Roboto" }}
@@ -34,6 +35,7 @@ function Cover() {
             Transforming Waste into wealth
           </div>
         </div>
+        
 
        <Button
           endIcon={<ArrowCircleRightIcon />}
@@ -44,8 +46,10 @@ function Cover() {
         >
           Get Started
   </Button>
+  <SimpleBottomNavigation />
+  
       </div>
-
+    
     </>
   );
 }

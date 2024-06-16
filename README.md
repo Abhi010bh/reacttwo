@@ -1,2 +1,2 @@
-# React + Vite
-Exploring React using Vite
+# Front End
+React using Vite
